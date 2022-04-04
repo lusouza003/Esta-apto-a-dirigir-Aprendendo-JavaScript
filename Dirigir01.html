@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apto a dirigir</title>
+</head>
+<body>
+    <h1>Verificação se você esta apto a dirigir!  </h1>
+   Qual sua idade? <input type="number" name="" id="txnumber">
+   <input type="button" value="Verificar" onclick= clicar()>
+   <div id= 'res'>
+
+   </div>
+   <script> 
+   function clicar() {
+       window.document.getElementById( 'txnumber')
+        var res= window.document.getElementById('res')
+
+        var idade= Number(txnumber.value)
+        res.innerHTML= `<p> Sua idade é ${idade}</p>`
+        if( idade >= 18) {
+            res.innerHTML += `<p> Você esta apto a dirigir! </p>` 
+        } else {
+            res.innerHTML += `<p> Você não esta apto a dirigir! </p>`
+        } 
+   }
+</script>
+</body>
+</html>
