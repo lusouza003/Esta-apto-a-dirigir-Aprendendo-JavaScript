@@ -1,1 +1,0 @@
-# Verifica-o-se-esta-apto-a-dirigir-Aprendendo-JavaScript
